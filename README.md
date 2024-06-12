@@ -5,5 +5,6 @@ Tailwind css for Styling
 MySQL for database 
 PHP for Backend
 
------------------------------------------------------------12-06-2024
+-----------------------------------------------------------
+DATED: 08-06-2024
 Login page has implemented with React and tailwind Css
