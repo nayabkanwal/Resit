@@ -5,6 +5,7 @@ import Register from './components/Register';
 import Home from './components/Home';
 
 function App() {
+  //App.js file 
   return (
     <Router>
       <Routes>
