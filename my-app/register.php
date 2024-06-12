@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 include 'db.php';
 
-// Get the posted datjjjja.
+// Get the postedmmm datjjjja.
 $postdata = file_get_contents("php://input");
 $request = json_decode($postdata);
 
