@@ -17,7 +17,7 @@ function Login() {
     if (data.success) {
       navigate('/home');
     } else {
-      alert('Login iled');
+      alert('Login Failed');
     }
   };
 
