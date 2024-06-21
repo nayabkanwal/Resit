@@ -14,3 +14,5 @@ Login Page optimized and make more attractive and user friendly
 .............................................................
 DATED: 10-06-2024
 Login page has implemented with React and tailwind Css
+-----------------------------------------------
+Database created using PHP and running in Xampp server
