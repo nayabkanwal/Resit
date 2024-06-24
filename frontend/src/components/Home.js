@@ -1,15 +1,19 @@
-import React from 'react';
+import React from 'react'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
-function Home() {
-  return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-2xl">This is Dummy Home Page</h1>
-    </div>
-  );
+
+const Navbar = () => {
+
+    const cartlength = useSelector(state => state.cart)
+    return (
+        <div className='bg-black text-white font-semibold p-2'>
+            <ul className=' flex'>
+                <Link to={'/home'} className='m-2'>Home</Link>
+                <Link to={'/cart'} className='m-2'>Cart Items : {cartlength.length}</Link>
+            </ul>
+        </div>
+    )
 }
 
-export default Home;
-
-
-
-
+export default Navbar
