@@ -1,21 +1,29 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import Login from './components/Login';
-import Register from './components/Register';
-import Home from './components/Home';
+import "./App.css"
+import HomePage from "./home/HomePage"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import SinglePage from "./components/watch/SinglePage"
+import Header from "./components/header/Header"
+import Login from './components/Login'
+import Register from './components/Register'
+import Footer from "./components/footer/Footer"
 
 function App() {
-  //App.js file //////
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/home" element={<Home />} />
-      </Routes>
-    </Router>
-  );
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+
+          {/* <Route path="/" element={ }></Route> */}
+          <Route path='/' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route exact path='/home' element={<HomePage />} />
+          <Route path='/singlepage/:id' element={<SinglePage />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+export default App
